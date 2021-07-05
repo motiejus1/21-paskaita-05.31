@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 paskaita</title>
+</head>
+<body>
+    <script>
+        "use strict";
+// 3. Patikrinkite, ar iš trijų įvestų trikampio kraštinių galima sudaryti trikampį.
+
+// 4. Papildykite 3 užduotį:
+//    *Patikrinkite, ar trikampis yra lygiakraštis, lygiašonis ar įvairiakraštis
+//    *Patikrinkite, ar trikampis yra statusis, bukasis ar smailusis.
+
+    //Procedurinis
+    var trikampis = [5,4,5]; // trikampis statusis, ivariakrastis
+ 
+    // a < b+c 
+    // b < a+c 
+    // c < b+a
+
+
+    if((trikampis[0] < trikampis[1]+trikampis[2]) && (trikampis[1] < trikampis[0]+trikampis[2]) && (trikampis[2] < trikampis[1]+trikampis[0])) {
+        console.log("Trikampi sudaryti galime");
+        //ivariakrastis - kiekviena krastine skirtinga
+        // lygiakrastis - visos lygios
+        //lygiasonis - bent dvi is triju vienodos
+        var a = trikampis[0];
+        var b = trikampis[1];
+        var c = trikampis[2];
+
+        if(a != b && b != c && c != a) {// ivairiakrastis
+            console.log("Trikampis yra ivairiakrastis");
+            //1 if()
+        } else if(a==b && b==c && a==c) {// lygiakrastis
+            
+            console.log("Trikampis yra lygiakrastis");
+            //1 if()
+        } else { //lygiasonis
+            console.log("Trikampis yra lygiasonis")
+
+        }
+
+
+        //1 if()
+        
+
+    } else {
+        console.log("Trikampio sudaryti negalime");
+    }
+
+
+    //Funkcinis
+
+    </script>
+</body>
+</html>

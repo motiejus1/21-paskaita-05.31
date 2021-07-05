@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 paskaita</title>
+</head>
+<body>
+
+    <input type="text" id="sk" name="sk" value="12585464">
+    <button id="patvirtinti">Patvirtinti</button>
+
+    <script>
+        "use strict";
+        //Atskirti n zenklio skaiciaus skaitmenis ir juos patalpinti i masyva
+
+        // nuskaitymas -> veiksmas -> isvedimas
+
+        function nuskaitymas () {
+
+        }
+
+        function veiksmas ()
+        document.querySelector("#patvirtinti").addEventListener("click", function() {
+            var sk = parseInt(document.querySelector("#sk").value);
+            var masyvas = [];
+
+            while (sk > 0) {
+                masyvas.push(parseInt(sk%10));
+                sk = parseInt(sk / 10);
+            } 
+            masyvas = masyvas.reverse();
+            console.log(masyvas);
+        });
+    </script>
+</body>
+</html>

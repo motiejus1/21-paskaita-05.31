@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 paskaita</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        // Funkcijos - kodo blokas, kuris atlieka specifinius veiksmus 
+        // ir gali buti panaudotas daug kartu
+
+        // Void tipo funkcija
+        // Funkcija kuri negrazina nieko
+
+        // apsirasem funkcija
+        function pirmaFunkcija() {
+            // cia rasomas kodas ka funkcija daro
+            console.log("Funkcija");
+        }
+
+        function antraFunkcija() {
+            console.log("Funkcija1");
+        }
+
+        //Funkcija kuri jau kazka grazina
+        function treciaFunkcija() {
+            return [1,2,3,4,5]; // Funkcijai suteikia tam tikra reiksme
+        }
+
+        //funkcijos iskvietimas
+        antraFunkcija();
+        pirmaFunkcija();
+
+        var funkcijosRezultatas = antraFunkcija();
+
+        console.log(funkcijosRezultatas);
+
+        //Sudekite du skaicius
+
+        function suma(a, b) {
+            return a + b;
+        }
+
+        //Kintamieji perduodami funkcijos iskvietimo metu
+        console.log(suma(10,10));
+        console.log(suma(10,12));
+        console.log(suma(14,10));
+        console.log(suma(10,0));
+        console.log(suma(15,10));
+        console.log(suma(10,170));
+        console.log(suma(10,1280));
+
+        //Man nebepatinka console.log funkcija
+
+        function isvedimas(reiksme) {
+            console.log("Rezultatas yra: " + reiksme);
+        }
+
+        isvedimas(suma(10,10));
+        isvedimas(suma(10,12));
+        isvedimas(suma(14,10));
+        isvedimas(suma(10,0));
+        isvedimas(suma(15,10));
+        isvedimas(suma(10,170));
+        isvedimas(suma(10,1280));
+
+        // Sukurti n elementu masyva, kuris butu uzpildytas atsitiktinemis reiksmemis
+        var n = suma(10,10); //20
+        var masyvas = [];
+
+        for (var i = 0; i < n; i++) {
+            masyvas
+        }
+
+    </script>
+</body>
+</html>
